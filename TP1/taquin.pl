@@ -1,6 +1,14 @@
 %***************************
+% TP IA N°1 
+% Yanis Imekraz - Jonathan Andrieu 
+% 4IR-C2
+%***************************
+
+%***************************
 %DESCRIPTION DU JEU DU TAKIN
 %***************************
+
+:- include('avl.pl').
 
    %********************
    % ETAT INITIAL DU JEU
@@ -115,13 +123,6 @@ delete(1,X,[X|L], L).
 delete(N,X,[Y|L], [Y|R]) :-
    delete(N1,X,L,R),
    N is N1 + 1.
-
-
-   
-   
-   %*******************
-   % PARTIE A COMPLETER
-   %*******************
    
    %*******************************************************************
    % Coordonnees X(colonne),Y(Ligne) d'une piece P dans une situation U
@@ -217,3 +218,22 @@ disM(Elt,U,F,V) :-
 test_heuristique2(I,H):-
           initial_state(I),
           heuristique2(I,H).
+
+%%%%%%%%%%%%%%%%%%%%
+% A star
+%%%%%%%%%%%%%%%%%%%%
+
+main :- 
+   initial_state(S0),   %calcul de S0
+   heuristique(S0, H0), %calcul de H0
+   % F0 is G0 + H0 et à l'initialisation G0 = 0 donc F0 = H0       
+   empty(Pf), empty(Pu), empty(Q); %creation des 3 avl
+   insert([[H0,H0,0],S0],Pf,Pf_New),
+   insert([S0,[H0,H0,0],nil, nil],Pu,Pu_New),
+   aetoile(Pf,Pu,Q).
+
+aetoile([],[],_):- 
+   write("PAS de SOLUTION : L’ETAT FINAL N’EST PAS ATTEIGNABLE !").
+
+aetoile(Pf,Pu,Q):-
+   final_state(F),
