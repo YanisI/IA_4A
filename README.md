@@ -66,6 +66,14 @@ Voir le code source disponible dans le dossier TP1.
 
 #### Noter le temps de calcul de A* et l’influence du choix de l’heuristique : quelle taille de séquences optimales (entre 2 et 30 actions) peut-on générer avec chaque heuristique (H1, H2) ? Présenter les résultats sous forme de tableau.
 
+```
+test_time(Runtime) :-
+    statistics(runtime,[Start,_]),
+    main,
+    statistics(runtime,[Stop,_]),
+    Runtime is Stop-Start.
+```
+
 #### Quelle longueur de séquence peut-on envisager de résoudre pour le Taquin 4x4 ?
 
 #### A* trouve-t-il la solution pour la situation initiale suivante ?
