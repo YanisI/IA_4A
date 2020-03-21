@@ -8,8 +8,6 @@
 %DESCRIPTION DU JEU DU TAKIN
 %***************************
 
-:- include('avl.pl').
-
    %********************
    % ETAT INITIAL DU JEU
    %********************   
@@ -203,37 +201,21 @@ heuristique2(U, H) :-
     mtoL(F,Liste),
     heur2(U,H,Liste,F).
           
-   heur2(_,0,[],_).
-   heur2(U,H,[P|R],F) :-
-      disM(P,U,F,V),
-      heur2(U,H2,R,F),
-      H is V+H2.        
+heur2(_,0,[],_).
+heur2(U,H,[P|R],F) :-
+   disM(P,U,F,V),
+   heur2(U,H2,R,F),
+   H is V+H2.        
           
 disM(vide,_,_,0).                           
 disM(Elt,U,F,V) :-
 	coordonnees([LU,CU],U,Elt),
-    coordonnees([LF,CF],F,Elt),
-    V is abs(LU-LF) + abs(CU-CF).
+   coordonnees([LF,CF],F,Elt),
+   V is abs(LU-LF) + abs(CU-CF).
           
 test_heuristique2(I,H):-
           initial_state(I),
           heuristique2(I,H).
 
-%%%%%%%%%%%%%%%%%%%%
-% A star
-%%%%%%%%%%%%%%%%%%%%
 
-main :- 
-   initial_state(S0),   %calcul de S0
-   heuristique(S0, H0), %calcul de H0
-   % F0 is G0 + H0 et à l'initialisation G0 = 0 donc F0 = H0       
-   empty(Pf), empty(Pu), empty(Q); %creation des 3 avl
-   insert([[H0,H0,0],S0],Pf,Pf_New),
-   insert([S0,[H0,H0,0],nil, nil],Pu,Pu_New),
-   aetoile(Pf,Pu,Q).
 
-aetoile([],[],_):- 
-   write("PAS de SOLUTION : L’ETAT FINAL N’EST PAS ATTEIGNABLE !").
-
-aetoile(Pf,Pu,Q):-
-   final_state(F),
