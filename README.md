@@ -12,7 +12,8 @@ c) Quelle requête Prolog permettrait de savoir si une pièce donnée P (ex : a)
 
 
 On s'intéresse maintenant au prédicat rule/4. Comment l'utiliser pour répondre aux questions suivantes :
-d) quelle requête permet de trouver une situation suivante de l'état initial du Taquin 33 (3 sont possibles) ?
+
+d) quelle requête permet de trouver une situation suivante de l'état initial du Taquin 3x3 (3 sont possibles) ?
 
 e) quelle requête permet d'avoir ces 3 réponses regroupées dans une liste ? (cf. findall/3 en Annexe).
 
