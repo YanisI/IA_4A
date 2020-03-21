@@ -17,6 +17,8 @@ b) A quelles questions permettent de répondre les requêtes suivantes :
 ?- initial_state(Ini), nth1(L,Ini,Ligne), nth1(C,Ligne, d).
 ?- final_state(Fin), nth1(3,Fin,Ligne), nth1(2,Ligne,P)
 ```
+La première question permet de trouver la ligne et la colonne de l'élément "d" dans la matrice "Ini".
+La deuxième permet de trouver l'élément présent aux coordonnées Ligne=3 et Colonne=2.
 
 c) Quelle requête Prolog permettrait de savoir si une pièce donnée P (ex : a) est bien placée dans U0 (par rapport à F) ?
 
