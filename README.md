@@ -29,6 +29,8 @@ nth1(C,Ligne,d),
 nth1(L1,F,Ligne1),
 nth1(C1,Ligne1,d)
 ```
+Réponse de Swi-Prolog:
+
 ```
 F = [[a, b, c], [h, vide, d], [g, f, e]],
 U0 = [[b, h, c], [a, f, d], [g, vide, e]],
