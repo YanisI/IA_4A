@@ -1,6 +1,8 @@
 # Rapport TRAVAUX PRATIQUES D'I.A
 
-## 1. Familiarisation avec le problème du Taquin 3x3
+## ALGORITHME A* - APPLICATION AU TAQUIN
+
+### 1. Familiarisation avec le problème du Taquin 3x3
 
 a) Quelle clause Prolog permettrait de représenter la situation finale du Taquin 4x4 ?
 
@@ -21,9 +23,9 @@ e) quelle requête permet d'avoir ces 3 réponses regroupées dans une liste ? (
 
 f) quelle requête permet d'avoir la liste de tous les couples [A, S] tels que S est la situation qui résulte de l'action A en U0 ?
 
-## 2. Développement des 2 heuristiques
+### 2. Développement des 2 heuristiques
 
-## 3. Implémentation de A*
+### 3. Implémentation de A*
 
 Noter le temps de calcul de A* et l’influence du choix de l’heuristique : quelle taille de séquences optimales (entre 2 et 30 actions) peut-on générer avec chaque heuristique (H1, H2) ? Présenter les résultats sous forme de tableau.
 
