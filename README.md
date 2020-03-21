@@ -1,5 +1,7 @@
 # Rapport TRAVAUX PRATIQUES D'I.A
 
+### 1 Familiarisation avec le problème du Taquin 3x3
+
 a) Quelle clause Prolog permettrait de représenter la situation finale du Taquin 4x4 ?
 
 b) A quelles questions permettent de répondre les requêtes suivantes :
