@@ -138,7 +138,9 @@ process_one_successor([U,FHG1,P1,A1],Pu,Pf,Q,Pu_aux,Pf_aux):-
         
     ).
 
-test_expand(Successors) :-
-    initial_state(Ini),
-    expand(Ini,0,Successors).
+test_time(Runtime) :-
+    statistics(runtime,[Start,_]),
+    main,
+    statistics(runtime,[Stop,_]),
+    Runtime is Stop-Start.
 
