@@ -78,4 +78,8 @@ test_time(Runtime) :-
 
 #### A* trouve-t-il la solution pour la situation initiale suivante ?
 
+```
+initial_state([ [a, b, c], [g,vide,d], [h, f, e]]).
+```
+
 #### Quelle représentation de l’état du Rubik’s Cube et quel type d’action proposeriez-vous si vous vouliez appliquer A*?
