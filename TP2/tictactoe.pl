@@ -161,8 +161,12 @@ alignement_perdant(Ali, J) :-
 	lorsqu'un joueur J joue en coordonnees [L,C]
      */	
 
-% A FAIRE
-% successeur(J,Etat,[L,C]) :- ? ? ? ?  
+successeur(J,Etat,[L,C]) :-    
+    nth1(L,Etat,Ligne),
+    nth1(C,Ligne,Elem),
+    ( var(Elem) ->
+        Elem=J
+    ).
 
 	/**************************************
    	 EVALUATION HEURISTIQUE D'UNE SITUATION
