@@ -48,7 +48,8 @@ adversaire(o,x).
 	 continuer � jouer (quel qu'il soit).
 	 ****************************************************/
 
-% situation_terminale(_Joueur, Situation) :-   ? ? ? ? ?
+situation_terminale(_Joueur, Situation) :-  
+	ground(Situation).
 
 /***************************
  DEFINITIONS D'UN ALIGNEMENT
