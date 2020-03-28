@@ -97,4 +97,9 @@ Non car cet état est non connexe avec l'etat final donc il n'y a pas de solutio
 La réprésentation de l'état du Rubik's Cube serait très inspirée de celle du taquin. C'est à dire représenter chaque face du Cube par une liste de matrice décrivant l'état de ce dernier.
 Puis il nous faut réprésenter les différents mouvements possibles pour modifier l'état du cube et appliquer l'algorithme A* comme dans le projet que nous venons de réaliser.
 
+### Conclusion
+
+En conclusion, ce premier TP était très interessant car il nous a permis de mettre en oeuvre l'algorithme A* qui est fonctionnel. Nous pouvons résoudre plusieurs situation initiale de profondeur différentes et notamment la résolution du 4ème état initial qui nécessite 16 coups.
+Pour finir, c'était pour moi la première fois que je manipulais le langage Prolog. J'ai donc dû apprendre à m'en servir tout en avancant sur le projet.
+
 ## ALGO MINMAX - APPLICATION AU TICTACTOE
