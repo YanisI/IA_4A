@@ -102,7 +102,7 @@ aetoile(Pf, Pu, Qs) :-
     ).
 
 expand(U,Gu,S) :- %U situation, Gu cout de U, S état successeurs
-    findall([S2, [F,H,G2], U, R], (rule(R,1,U,S2),heuristique(S2,H),G2 is Gu+H,F is G2+H), S).
+    findall([S2, [F,H,G2], U, R], (rule(R,1,U,S2),heuristique(S2,H),G2 is Gu+1,F is G2+H), S).
 
 loop_successors([],Pu,Pf,_,Pu,Pf).
 
