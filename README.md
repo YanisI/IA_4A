@@ -95,6 +95,7 @@ Non car cet état est non connexe avec l'etat final donc il n'y a pas de solutio
 #### Quelle représentation de l’état du Rubik’s Cube et quel type d’action proposeriez-vous si vous vouliez appliquer A*?
 
 La réprésentation de l'état du Rubik's Cube serait très inspirée de celle du taquin. C'est à dire représenter chaque face du Cube par une liste de matrice décrivant l'état de ce dernier.
+
 Puis il nous faut réprésenter les différents mouvements possibles pour modifier l'état du cube et appliquer l'algorithme A* comme dans le projet que nous venons de réaliser.
 
 ### Conclusion du TP1
