@@ -78,6 +78,8 @@ test_time(Runtime) :-
     Runtime is Stop-Start.
 ```
 
+![](img/tests_aetoile.png)
+
 #### Quelle longueur de séquence peut-on envisager de résoudre pour le Taquin 4x4 ?
 
 #### A* trouve-t-il la solution pour la situation initiale suivante ?
