@@ -1,3 +1,6 @@
+Yanis Imekraz - Jonathan Andrieu
+4 IR - IC2
+
 # Rapport TRAVAUX PRATIQUES D'I.A
 
 ## ALGORITHME A* - APPLICATION AU TAQUIN
