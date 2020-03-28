@@ -86,6 +86,8 @@ test_time(Runtime) :-
 initial_state([ [a, b, c], [g,vide,d], [h, f, e]]).
 ```
 
+Non car cet état est non connexe avec l'etat final donc il n'y a pas de solution.
+
 #### Quelle représentation de l’état du Rubik’s Cube et quel type d’action proposeriez-vous si vous vouliez appliquer A*?
 
 ## ALGO MINMAX - APPLICATION AU TICTACTOE
