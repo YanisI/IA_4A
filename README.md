@@ -6,6 +6,10 @@ Yanis Imekraz - Jonathan Andrieu
 
 ## ALGORITHME A* - APPLICATION AU TAQUIN
 
+L’objectif est d'implémenter l’algorithme A* sous une forme générique et efficace en utilisant des structures de données adaptées afin de bénéficier d'opérations sur les états (recherche, insertion, suppression, modification) de faible complexité algorithmique.
+
+Puis on étudiera expérimentalement le comportement et les limites de l'algorithme sur le problème du Taquin, en essayant 2 heuristiques différentes.
+
 ### 1. Familiarisation avec le problème du Taquin 3x3
 
 #### a) Quelle clause Prolog permettrait de représenter la situation finale du Taquin 4x4 ?
