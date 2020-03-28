@@ -100,7 +100,9 @@ Puis il nous faut réprésenter les différents mouvements possibles pour modifi
 ### Conclusion du TP1
 
 En conclusion, ce premier TP était très interessant car il nous a permis de mettre en oeuvre l'algorithme A* qui est fonctionnel. Nous pouvons résoudre plusieurs situation initiale de profondeur différentes et notamment la résolution du 4ème état initial qui nécessite 16 coups.
+
 Egalement nous avons tester différent heuristiques tel que l'heuristique du nombre de pièces mal placées et celui de la  distance de Manhattan qui représente la distance séparant une pièce de sa bonne place.
+
 Pour finir, c'était pour moi la première fois que je manipulais le langage Prolog. J'ai donc dû apprendre à m'en servir tout en avancant sur le projet.
 
 ## ALGO MINMAX - APPLICATION AU TICTACTOE
