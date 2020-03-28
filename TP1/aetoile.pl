@@ -110,7 +110,7 @@ loop_successors([S1|Reste],Pu,Pf,Q,Pu_New,Pf_New):-
     process_one_successor(S1,Pu,Pf,Q,Pu_aux,Pf_aux),
     loop_successors(Reste,Pu_aux,Pf_aux,Q,Pu_New,Pf_New).
 
-process_one_successor([U,FHG1,P1,A1],Pu,Pf,Q,Pu_aux,Pf_aux):-
+process_one_successor([U,FHG1,P1,A1],Pu,Pf,Q,Pf_aux,Pu_aux):-
     
     (belongs([U,_,_,_],Q) -> %si U est connu dans Q alors oublier cet état (U a déjà été développé)
         
