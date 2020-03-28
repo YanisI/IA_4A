@@ -82,6 +82,8 @@ test_time(Runtime) :-
 
 #### Quelle longueur de séquence peut-on envisager de résoudre pour le Taquin 4x4 ?
 
+On peut résoudre des problèmes de même longueur. En effet, il pourra présenter des situation complexes demandant plus de temps de calcul et de stockage mémoire mais en augmentant le nombre de cases on augmente pas forcément la difficulté car la méthode résolution reste la même.
+
 #### A* trouve-t-il la solution pour la situation initiale suivante ?
 
 ```
